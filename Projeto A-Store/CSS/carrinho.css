@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+    box-sizing: border-box;
+}
+
+main{
+    padding: 0px 60px;
+}
+
+/* HEADER */
+
+header nav{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: gray;
+    padding: 20px;
+}
+
+header ul{
+    flex: 1;
+    display: flex;
+    gap: 40px;
+}
+
+header .left{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color: #FFF;
+}
+
+header .left .link_left{
+    text-decoration: none;
+    color: #FFF;
+}
+
+header .right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+header .card{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+header .card li{
+    display: flex;
+    align-items: center;
+    background-color: #AAA;
+    height: 60px;
+    border-radius: 50%;
+}
+
+header .card li:hover{
+    background-color: #505050;
+}
+
+header li{
+    list-style: none;
+    color: #FFF;
+    font-size: 20px;
+    padding: 20px;
+    text-decoration: underline;
+}
+
+/* CART */
+
+.cart-bar{
+    display: flex;
+    font-size: 42px;
+    justify-content: center;
+    padding: 15px 0px;
+    background-color: #AAA;
+}
+
+#cart{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+#cart .left{
+    flex: 2;
+}
+
+#cart .mensage{
+    display: flex;
+    font-size: 35px;
+    justify-content: center;
+}
+
+#cart .cart_area{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#cart img{
+    height: 250px;
+    width: 170px;
+}
+
+#cart .cart_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#cart .cart_book{
+    font-size: 25px;
+}
+
+#cart .cart_category{
+    font-size: 20px;
+}
+ 
+#cart .cart_icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100px;
+    background-color: red;
+    color: #FFF;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#cart .cart_icon:hover{
+    background-color: rgb(190, 0, 0);
+}
+
+#cart .right{
+    padding: 50px 20px;
+    background-color: #EEE;
+    border-radius: 20px;
+}
+
+#cart .total_title{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#cart .total_price{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#cart .total_button{
+    display: flex;
+    justify-content: center;
+    background-color: #00F;
+    color: #FFF;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#cart .total_button:hover{
+    background-color: rgb(2, 2, 165);
+}

@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu Carrinho - A-Store</title>
+        <link rel="stylesheet" type="text/css" href="CSS/carrinho.css"/>
+        <link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+
+        <header>
+
+            <nav>
+
+                <ul>
+
+                    <div class="left">
+
+                        <a class="link_left" href="homepage.html">A-Store</a>
+
+                    </div>
+
+                    <div class="right">
+                        
+                        <a href="homepage.html"><li>Catálogo</li></a>
+                        <a class="card" href="carrinho.html"><li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg>
+                        </li></a>
+
+                    </div>
+
+                </ul>
+
+            </nav>
+
+        </header>
+
+        <div class="cart-bar">Meu Carrinho:</div>
+
+        <main>
+
+            <section id="cart">
+
+                <div class="left">
+
+                    <div class="mensage"></div>
+
+                    <div class="cart_area principe">
+
+                        <div class="cart_left"></div>
+
+                        <div class="cart_right">
+
+                            <div class="cart_book"></div>
+
+                            <div class="cart_category"></div>
+
+                            <div class="cart_price"></div>
+
+                            <div class="cart_btn">
+
+                                <!--<div class="cart_icon principe"></div>-->
+
+                                <div class="cart_icon principe">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"> 
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                    </svg> 
+                                    
+                                    Remover
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cart_area anne">
+
+                        <div class="cart_left anne"></div>
+
+                        <div class="cart_right anne">
+
+                            <div class="cart_book anne"></div>
+
+                            <div class="cart_category anne"></div>
+
+                            <div class="cart_price anne"></div>
+
+                            <div class="cart_btn anne">
+
+                                <div class="cart_icon anne">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"> 
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                    </svg> 
+                                    
+                                    Remover
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cart_area davinci">
+
+                        <div class="cart_left davinci"></div>
+
+                        <div class="cart_right davinci">
+
+                            <div class="cart_book davinci"></div>
+
+                            <div class="cart_category davinci"></div>
+
+                            <div class="cart_price davinci"></div>
+
+                            <div class="cart_btn davinci">
+
+                                <div class="cart_icon davinci">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"> 
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                    </svg> 
+                                    
+                                    Remover
+
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cart_area quixote">
+
+                        <div class="cart_left quixote"></div>
+
+                        <div class="cart_right quixote">
+
+                            <div class="cart_book quixote"></div>
+
+                            <div class="cart_category quixote"></div>
+
+                            <div class="cart_price quixote"></div>
+
+                            <div class="cart_btn quixote">
+
+                                <div class="cart_icon quixote">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"> 
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                    </svg> 
+                                    
+                                    Remover
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cart_area apanhador">
+
+                        <div class="cart_left apanhador"></div>
+
+                        <div class="cart_right apanhador">
+
+                            <div class="cart_book apanhador"></div>
+
+                            <div class="cart_category apanhador"></div>
+
+                            <div class="cart_price apanhador"></div>
+
+                            <div class="cart_btn apanhador">
+
+                                <div class="cart_icon apanhador">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"> 
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                    </svg> 
+                                    
+                                    Remover
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cart_area harry_box">
+
+                        <div class="cart_left harry_box"></div>
+
+                        <div class="cart_right harry_box">
+
+                            <div class="cart_book harry_box"></div>
+
+                            <div class="cart_category harry_box"></div>
+
+                            <div class="cart_price harry_box"></div>
+
+                            <div class="cart_btn harry_box">
+
+                                <div class="cart_icon harry_box">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"> 
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                    </svg> 
+                                    
+                                    Remover
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cart_area hobbit">
+
+                        <div class="cart_left hobbit"></div>
+
+                        <div class="cart_right hobbit">
+
+                            <div class="cart_book hobbit"></div>
+
+                            <div class="cart_category hobbit"></div>
+
+                            <div class="cart_price hobbit"></div>
+
+                            <div class="cart_btn hobbit">
+
+                                <div class="cart_icon hobbit">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"> 
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                    </svg> 
+                                    
+                                    Remover
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cart_area aneis">
+
+                        <div class="cart_left aneis"></div>
+
+                        <div class="cart_right aneis">
+
+                            <div class="cart_book aneis"></div>
+
+                            <div class="cart_category aneis"></div>
+
+                            <div class="cart_price aneis"></div>
+
+                            <div class="cart_btn aneis">
+
+                                <div class="cart_icon aneis">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"> 
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                    </svg> 
+                                    
+                                    Remover
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cart_area harry_pedra">
+
+                        <div class="cart_left harry_pedra"></div>
+
+                        <div class="cart_right harry_pedra">
+
+                            <div class="cart_book harry_pedra"></div>
+
+                            <div class="cart_category harry_pedra"></div>
+
+                            <div class="cart_price harry_pedra"></div>
+
+                            <div class="cart_btn harry_pedra">
+
+                                <div class="cart_icon harry_pedra">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"> 
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                    </svg> 
+                                    
+                                    Remover
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cart_area robo">
+
+                        <div class="cart_left robo"></div>
+
+                        <div class="cart_right robo">
+
+                            <div class="cart_book robo"></div>
+
+                            <div class="cart_category robo"></div>
+
+                            <div class="cart_price robo"></div>
+
+                            <div class="cart_btn robo">
+
+                                <div class="cart_icon robo">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"> 
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                    </svg> 
+                                    
+                                    Remover
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cart_area cubas">
+
+                        <div class="cart_left cubas"></div>
+
+                        <div class="cart_right cubas">
+
+                            <div class="cart_book cubas"></div>
+
+                            <div class="cart_category cubas"></div>
+
+                            <div class="cart_price cubas"></div>
+
+                            <div class="cart_btn cubas">
+
+                                <div class="cart_icon cubas">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"> 
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                    </svg> 
+                                    
+                                    Remover
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cart_area senhora">
+
+                        <div class="cart_left senhora"></div>
+
+                        <div class="cart_right senhora">
+
+                            <div class="cart_book senhora"></div>
+
+                            <div class="cart_category senhora"></div>
+
+                            <div class="cart_price senhora"></div>
+
+                            <div class="cart_btn senhora">
+
+                                <div class="cart_icon senhora">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"> 
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                    </svg> 
+                                    
+                                    Remover
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cart_area guarani">
+
+                        <div class="cart_left guarani"></div>
+
+                        <div class="cart_right guarani">
+
+                            <div class="cart_book guarani"></div>
+
+                            <div class="cart_category guarani"></div>
+
+                            <div class="cart_price guarani"></div>
+
+                            <div class="cart_btn guarani">
+
+                                <div class="cart_icon guarani">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"> 
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                    </svg> 
+                                    
+                                    Remover
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cart_area iracema">
+
+                        <div class="cart_left iracema"></div>
+
+                        <div class="cart_right iracema">
+
+                            <div class="cart_book iracema"></div>
+
+                            <div class="cart_category iracema"></div>
+
+                            <div class="cart_price iracema"></div>
+
+                            <div class="cart_btn iracema">
+
+                                <div class="cart_icon iracema">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"> 
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                    </svg> 
+                                    
+                                    Remover
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cart_area cortico">
+
+                        <div class="cart_left cortico"></div>
+
+                        <div class="cart_right cortico">
+
+                            <div class="cart_book cortico"></div>
+
+                            <div class="cart_category cortico"></div>
+
+                            <div class="cart_price cortico"></div>
+
+                            <div class="cart_btn cortico">
+
+                                <div class="cart_icon cortico">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"> 
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                    </svg> 
+                                    
+                                    Remover
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cart_area peregrino">
+
+                        <div class="cart_left peregrino"></div>
+
+                        <div class="cart_right peregrino">
+
+                            <div class="cart_book peregrino"></div>
+
+                            <div class="cart_category peregrino"></div>
+
+                            <div class="cart_price peregrino"></div>
+
+                            <div class="cart_btn peregrino">
+
+                                <div class="cart_icon peregrino">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"> 
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                    </svg> 
+                                    
+                                    Remover
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cart_area narnia1">
+
+                        <div class="cart_left narnia1"></div>
+
+                        <div class="cart_right narnia1">
+
+                            <div class="cart_book narnia1"></div>
+
+                            <div class="cart_category narnia1"></div>
+
+                            <div class="cart_price narnia1"></div>
+
+                            <div class="cart_btn narnia1">
+
+                                <div class="cart_icon narnia1">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"> 
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                    </svg> 
+                                    
+                                    Remover
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cart_area narnia7">
+
+                        <div class="cart_left narnia7"></div>
+
+                        <div class="cart_right narnia7">
+
+                            <div class="cart_book narnia7"></div>
+
+                            <div class="cart_category narnia7"></div>
+
+                            <div class="cart_price narnia7"></div>
+
+                            <div class="cart_btn narnia7">
+
+                                <div class="cart_icon narnia7">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"> 
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                    </svg> 
+                                    
+                                    Remover
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cart_area cristianismo">
+
+                        <div class="cart_left cristianismo"></div>
+
+                        <div class="cart_right cristianismo">
+
+                            <div class="cart_book cristianismo"></div>
+
+                            <div class="cart_category cristianismo"></div>
+
+                            <div class="cart_price cristianismo"></div>
+
+                            <div class="cart_btn cristianismo">
+
+                                <div class="cart_icon cristianismo">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"> 
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                    </svg> 
+                                    
+                                    Remover
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cart_area cafe">
+
+                        <div class="cart_left cafe"></div>
+
+                        <div class="cart_right cafe">
+
+                            <div class="cart_book cafe"></div>
+
+                            <div class="cart_category cafe"></div>
+
+                            <div class="cart_price cafe"></div>
+
+                            <div class="cart_btn cafe">
+
+                                <div class="cart_icon cafe">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"> 
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                    </svg> 
+                                    
+                                    Remover
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="right">
+
+                    <div class="total_title">Finalizar compra</div>
+
+                    <div class="total_price"></div>
+
+                    <div class="total_button">Comprar</div>
+
+                </div>
+            
+            </section>
+
+        </main>
+
+        <script src="JS/carrinho.js"></script>
+        
+    </body>
+
+</html>
